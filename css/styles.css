@@ -1,0 +1,57 @@
+/* css/styles.css */
+
+:root {
+    --bg-main: #f8f9fa;
+    --text-main: #212529;
+    --primary-color: #0d6efd;
+}
+
+/* EL TRUCO: Imagen de fondo + Capa blanca semi-transparente encima */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--text-main);
+    min-height: 100vh;
+    /* La capa blanca (0.90) deja ver un poquito de la imagen, pero hace que todo resalte */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url('../img/Imagen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Tarjetas Blancas Sólidas para que resalten sobre el fondo */
+.bg-surface {
+    background-color: #ffffff !important;
+}
+
+/* Navbar con un blanco un poco más sólido para que no se pierda */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(5px); /* Un blur sutil SOLO en el navbar para que se vea premium */
+}
+
+/* Quitamos el fondo especial del Hero, porque ahora toda la página tiene el fondo */
+.hero-bg {
+    background-color: #ffffff;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Efectos Hover */
+.hover-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs */
+.form-control, .form-select {
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
