@@ -1,9 +1,9 @@
 // js/auth.js
 
 const usuariosDB = [
-    { email: "admin@taller.com", password: "admin123", nombre: "Carlos Admin", rol: "admin", activo: true, telefono: "0991112222" },
-    { email: "cliente1@test.com", password: "123", nombre: "Juan Pérez", rol: "cliente", activo: true, telefono: "0987654321" },
-    { email: "cliente2@test.com", password: "123", nombre: "María López", rol: "cliente", activo: true, telefono: "0998765432" },
+    { email: "admin@taller.com", password: "admin123", nombre: "Johao Admin", rol: "admin", activo: true, telefono: "0969539726" },
+    { email: "cliente1@test.com", password: "123", nombre: "Alexis Gavilima", rol: "cliente", activo: true, telefono: "0987654321" },
+    { email: "cliente2@test.com", password: "123", nombre: "María Quiña", rol: "cliente", activo: true, telefono: "0998765432" },
     { email: "bloqueado@test.com", password: "123", nombre: "Pedro Bloqueado", rol: "cliente", activo: false, telefono: "0970000000" }
 ];
 
